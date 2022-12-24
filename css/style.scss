@@ -1,0 +1,223 @@
+@import "scss/libs/bootstrap.min";
+@import "scss/libs/fonts";
+@import "scss/libs/variables";
+@import "scss/libs/mixins";
+@import "scss/libs/daterangepicker";
+@import "scss/libs/themes";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+%clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+:root {
+  --blue: #0a5dff !important;
+  --primary: #0a5dff !important;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+
+#wrapper {
+  padding-left: 0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.custom-control-input:focus {
+  box-shadow: none !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none !important;
+}
+
+svg {
+  transition: 0!important;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
+}
+
+.price__switcher > .bump_not::before {
+  content: none;
+}
+.price__switcher > label {
+  margin-top: 0;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+input:focus::placeholder {
+  color: transparent !important;
+}
+.modal-open .modal {
+  overflow: hidden;
+}
+//Component page
+@import "scss/blocks/components";
+//Main section
+@import "scss/blocks/main";
+//Header
+@import "scss/blocks/header";
+//Sidebar
+@import "scss/blocks/sidebar";
+@import "scss/blocks/sidebarLight";
+//Titles
+@import "scss/blocks/titles";
+//Header popovers
+@import "scss/blocks/headerPopovers";
+//Buttons
+@import "scss/blocks/buttons";
+//Filter
+@import "scss/blocks/filter";
+//Profile settings
+@import "scss/blocks/newProfile";
+//Pagination
+@import "scss/blocks/pagination";
+//Tabs
+@import "scss/blocks/tabs";
+//Inputs
+@import "scss/blocks/inputs";
+//Tables
+@import "scss/blocks/tables";
+
+@import "scss/blocks/userInformation";
+
+@import "scss/blocks/profileSettings";
+
+@import "scss/blocks/traderWorkspace";
+
+//Toast notification
+@import "scss/blocks/toastNotification";
+//Modal
+@import "scss/blocks/removeModal";
+@import "scss/blocks/userProfile";
+
+//Widgets
+@import "scss/widgets/cards";
+@import "scss/widgets/compare";
+@import "scss/widgets/dailyVisits";
+@import "scss/widgets/doughnut";
+@import "scss/widgets/emptyAddWidget";
+@import "scss/widgets/funnelChart";
+@import "scss/widgets/gant";
+@import "scss/widgets/heatmap";
+@import "scss/widgets/newWidget";
+@import "scss/widgets/radialBar";
+@import "scss/widgets/spider";
+@import "scss/widgets/tableWidget";
+@import "scss/widgets/tasks";
+@import "scss/widgets/widgets";
+@import "scss/widgets/revenue";
+
+@import "scss/blocks/salesTop";
+
+//Tables
+@import "scss/blocks/_tableBlock";
+//Rating
+@import "scss/blocks/rating";
+
+
+// Login page
+@import "scss/blocks/login";
+
+//Payment Info
+@import "scss/blocks/pricingInfo";
+
+//Sales stats
+@import "scss/blocks/salesTable";
+
+//Refferal table
+@import "scss/blocks/refferalTable";
+
+@import "scss/blocks/grid";
+
+//Media queries
+@import "scss/blocks/media";
+
+input {
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+}
+.intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type=text], .intl-tel-input.allow-dropdown input[type=tel], .intl-tel-input.separate-dial-code input, .intl-tel-input.separate-dial-code input[type=text], .intl-tel-input.separate-dial-code input[type=tel] {
+  padding-left: 62px!important;
+ }
+#myChart-license-text,
+#barChart-license-text,
+#visitChart-license-text,
+#barChart-license-text,
+#barsChart-license-text,
+#linesChart-license-text {
+  display: none;
+}
+#barChart-license-text {
+  display: none !important;
+  a {
+    display: none !important;
+  }
+}
+
+.blank-template {
+  #content-wrapper .container-fluid {
+    height: 88vh;
+  }
+}
+
